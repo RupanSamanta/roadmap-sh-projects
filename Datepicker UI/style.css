@@ -25,7 +25,7 @@ main .container {
   padding: 10px;
 }
 main .container > div {
-  background-color: rgba(149, 149, 149, 0.213);
+  background-color: rgba(180, 180, 180, 0.213);
   padding: 10px;
   overflow: hidden;
 }
@@ -41,7 +41,7 @@ main .container .input-field {
   border: none;
   outline: none;
   color: #fff;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   padding: 0;
   padding-left: 15px;
   border-top-left-radius: 10px;
@@ -62,6 +62,7 @@ main .container .input-field input[type=text] {
 main .container .calender {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  box-shadow: 0 30px 30px -20px rgba(17, 17, 17, 0.5);
 }
 main .container .calender .month-year-nav,
 main .container .calender .days-name {
