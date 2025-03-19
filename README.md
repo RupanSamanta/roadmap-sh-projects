@@ -6,7 +6,7 @@ This repository contains a collection of projects inspired by [Roadmap.sh](https
 
 | #  | Project Name             | Technologies Used     | Status  |
 |----|-------------------------|----------------------|---------|
-| 1  | [Datepicker UI]()     | HTML, SCSS      | ✅ Completed |
+| 1  | [Datepicker UI](https://github.com/RupanSamanta/roadmap-sh-projects/tree/main/Datepicker%20UI)     | HTML, SCSS      | ✅ Completed |
 
 _(to be Updated as more projects are added)_
 
