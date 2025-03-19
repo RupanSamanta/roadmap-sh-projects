@@ -1,13 +1,12 @@
 # 🚀 Roadmap.sh Projects  
 
 This repository contains a collection of projects inspired by [Roadmap.sh](https://roadmap.sh/). The projects cover various web development concepts, helping to build real-world skills.  
-Projects Link 👉 https://roadmap.sh/projects/datepicker-ui
 
 ## 📂 Project List  
 
-| #  | Project Name             | Technologies Used     | Status  |
-|----|-------------------------|----------------------|---------|
-| 1  | [Datepicker UI](https://github.com/RupanSamanta/roadmap-sh-projects/tree/main/Datepicker%20UI)     | HTML, SCSS      | ✅ Completed |
+| #  | Project Name             | Technologies Used     | Status | Project Link  |
+|----|-------------------------|----------------------|---------|----------------------|
+| 1  | [Datepicker UI](https://rupansamanta.github.io/roadmap-sh-projects/Datepicker%20UI)     | HTML, SCSS      | ✅ Completed | https://roadmap.sh/projects/datepicker-ui |
 
 _(to be Updated as more projects are added)_
 
