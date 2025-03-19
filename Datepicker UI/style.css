@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --width: 330px;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container {
+  width: var(--width);
+  margin: 10px;
+  padding: 10px;
+}
+main .container > div {
+  background-color: rgba(149, 149, 149, 0.213);
+  padding: 10px;
+  overflow: hidden;
+}
+main .container button {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border: none;
+}
+main .container .input-field {
+  height: 35px;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-bottom: 3px;
+  padding: 0;
+  padding-left: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container .input-field input[type=text] {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0 10px;
+  font-size: 14px;
+}
+main .container .calender {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+main .container .calender .month-year-nav,
+main .container .calender .days-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+main .container .calender .days-name > div,
+main .container .calender .days > div {
+  width: calc(var(--width) / 7);
+  text-align: center;
+  font-size: 14px;
+}
+main .container .calender .days {
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  place-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+main .container .calender .days > div {
+  width: calc(var(--width) / 7 - 5px - 10px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

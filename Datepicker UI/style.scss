@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+:root {
+    --width: 330px;
+}
+
+@mixin flexbox($justify: space-between, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include flexbox;
+
+    .container {
+        width: var(--width);
+        margin: 10px;
+        padding: 10px;
+
+        > div {
+            background-color: rgba(149, 149, 149, 0.213);
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        button {
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            border: none;
+        }
+
+        .input-field {
+            height: 35px;
+            font-size: 1.2rem;
+            border: none;
+            outline: none;
+            color: #fff;
+            margin-bottom: 3px;
+            padding: 0;
+            padding-left: 15px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            @include flexbox(space-between, center);
+
+            input[type="text"] {
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+                background: transparent;
+                padding: 0 10px;
+                font-size: 14px;
+            }
+        }
+
+        .calender {
+            
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            .month-year-nav,
+            .days-name {
+                @include flexbox;
+                gap: 5px;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            .days-name>div,
+            .days>div {
+                width: calc(var(--width) / 7);
+                text-align: center;
+                font-size: 14px;
+            }
+
+            .days {
+                width: 100%;
+                height: 200px;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                place-items: center;
+                gap: 5px;
+                padding: 10px;
+
+                >div {
+                    width: calc(var(--width) / 7 - 5px - 10px);
+                    height: 100%;
+                    @include flexbox(center, center);
+                }
+            }
+        }
+    }
+}
